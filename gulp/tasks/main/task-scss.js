@@ -28,12 +28,9 @@ export function task_scss() {
             IS_PROD_MODE,
             cleanCss(),
         ))
-        .pipe(gulpIf(
-            IS_PROD_MODE,
-            rename({
-                extname: '.min.css'
-            })
-        ))
+        .pipe(rename({
+            extname: '.min.css'
+        }))
         .pipe(gulp.dest(paths.build.css))
         .pipe(browserSync.stream())
 }
