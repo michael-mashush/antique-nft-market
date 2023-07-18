@@ -11,7 +11,7 @@ export function task_js() {
         .pipe(webpackStream({
             mode: IS_PROD_MODE ? 'production' : 'development',
             output: {
-                filename: IS_PROD_MODE ? 'index.min.js' : 'index.js'
+                filename: 'index.min.js'
             },
         }))
         .pipe(gulp.dest(paths.build.js))

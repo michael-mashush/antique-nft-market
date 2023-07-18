@@ -1,5 +1,5 @@
 const sourceFolder = './source'
-const buildFolder  = './build'
+const buildFolder  = './docs'
 
 export const paths = {
     source: {
