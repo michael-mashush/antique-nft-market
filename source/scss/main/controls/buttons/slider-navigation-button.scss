@@ -1,0 +1,36 @@
+.slider-navigation-button {
+    display: flex;
+    overflow: hidden;
+    padding: 10px;
+    background-color: transparent;
+    transition: all 0.2s;
+
+    &:not(.swiper-button-disabled):active {
+    	transform: scale(0.9);
+    }
+
+    &:not(.swiper-button-disabled):focus-visible, &:not(.swiper-button-disabled):hover {
+    	background-color: rgba(var(--color-11));
+    }
+
+    &.swiper-button-disabled {
+    	cursor: auto;
+    }
+
+    &__icon {
+    	width: 60px;
+
+    	@media screen and (max-width: 1820px) {
+    		width: calc(40px + 20 * (100vw - 320px) / (1820 - 320));
+    	}
+
+    	& path {
+    		transition: stroke 0.2s;
+    		stroke: rgba(var(--color-03));
+
+    		.swiper-button-disabled & {
+    			stroke: rgba(var(--color-07));
+    		}
+    	}
+    }
+}

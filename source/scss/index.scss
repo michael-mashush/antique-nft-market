@@ -1,0 +1,133 @@
+/*
+    [==================================================]
+        Initial styles
+    [==================================================]
+*/
+
+@import './init/reset.scss';
+
+@import './init/fonts.scss';
+
+@import './init/const.scss';
+
+/*
+    [==================================================]
+        Libraries
+    [==================================================]
+*/
+
+@import './libs/aos.scss';
+
+@import './libs/swiper.scss';
+
+/*
+    [==================================================]
+        Typography
+    [==================================================]
+*/
+
+@import './main/typography/heading.scss';
+
+@import './main/typography/paragraph.scss';
+
+/*
+    [==================================================]
+        Sections
+    [==================================================]
+*/
+
+@import './main/sections/default-section.scss';
+
+@import './main/sections/header-section.scss';
+
+@import './main/sections/intro-section.scss';
+
+@import './main/sections/about-section.scss';
+
+@import './main/sections/collections-section.scss';
+
+@import './main/sections/recent-drops-section.scss';
+
+@import './main/sections/subscribe-section.scss';
+
+@import './main/sections/latest-information-section.scss';
+
+@import './main/sections/partners-section.scss';
+
+@import './main/sections/contacts-section.scss';
+
+@import './main/sections/footer-section.scss';
+
+/*
+    [==================================================]
+        Elemenets
+    [==================================================]
+*/
+
+@import './main/elements/wrapper.scss';
+
+@import './main/elements/container.scss';
+
+@import './main/elements/image.scss';
+
+@import './main/elements/section-header.scss';
+
+@import './main/elements/nft-card.scss';
+
+@import './main/elements/slider-navigation.scss';
+
+@import './main/elements/slider-pagination.scss';
+
+@import './main/elements/social-links.scss';
+
+@import './main/elements/main-info.scss';
+
+@import './main/elements/info-column.scss';
+
+@import './main/elements/navigation.scss';
+
+@import './main/elements/intro-slider.scss';
+
+@import './main/elements/achievements.scss';
+
+@import './main/elements/achievement.scss';
+
+@import './main/elements/collections-slider.scss';
+
+@import './main/elements/collection-card.scss';
+
+@import './main/elements/recent-drops-slider.scss';
+
+@import './main/elements/subscribe-form.scss';
+
+@import './main/elements/latest-information-card.scss';
+
+@import './main/elements/our-partners.scss';
+
+@import './main/elements/social-info.scss';
+
+/*
+    [==================================================]
+        Controls
+    [==================================================]
+*/
+
+@import './main/controls/buttons/burger-button.scss';
+
+@import './main/controls/buttons/slider-navigation-button.scss';
+
+@import './main/controls/buttons/default-button.scss';
+
+@import './main/controls/inputs/default-input.scss';
+
+@import './main/controls/links/navigation-link.scss';
+
+@import './main/controls/links/information-link.scss';
+
+@import './main/controls/links/logotype-link.scss';
+
+@import './main/controls/links/slider-link.scss';
+
+@import './main/controls/links/social-link.scss';
+
+@import './main/controls/links/accent-link.scss';

@@ -1,0 +1,55 @@
+.burger-button {
+    position: relative;
+    height: 34px;
+    width: 34px;
+    border: 1px solid rgba(var(--color-11));
+    background-color: rgba(var(--color-11));
+    transition: all 0.2s;
+
+    &:focus-visible, &:hover {
+    	border-color: rgba(var(--color-06));
+    }
+
+    &__line {
+    	position: absolute;
+    	right: 6px;
+    	left: 6px;
+    	height: 2px;
+    	background-color: rgba(var(--color-06));
+    	transition: all 0.2s;
+
+    	.burger-button:focus-visible *, .burger-button:hover & {
+    		background-color: rgba(var(--color-04));
+    	}
+
+    	&:nth-child(1) {
+    		top: 9px;
+
+    		.burger-button--active & {
+    			transform: rotate(45deg);
+    		}
+    	}
+
+    	&:nth-child(2) {
+    		top: calc(50% - 1px);
+
+    		.burger-button--active & {
+    			opacity: 0;
+    		}
+    	}
+
+    	&:nth-child(3) {
+    		top: calc(100% - 11px);
+
+    		.burger-button--active & {
+    			transform: rotate(-45deg);
+    		}
+    	}
+
+    	&:nth-child(n) {
+    		.burger-button--active & {
+    			top: calc(50% - 1px);
+    		}
+    	}
+    }
+}

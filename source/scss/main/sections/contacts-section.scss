@@ -1,0 +1,41 @@
+.contacts-section {
+    &__inner {
+    	display: flex;
+
+    	@media screen and (max-width: 1200px) {
+    		align-items: flex-start;
+    		flex-direction: column;
+    	}
+    }
+
+    &__block {
+    	&:first-child {
+    		flex-basis: 400px;
+    		margin-right: 200px;
+
+    		@media screen and (max-width: 1820px) {
+    			margin-right: 100px;
+    		}
+
+    		@media screen and (max-width: 1440px) {
+    			flex-basis: 370px;
+    			margin-right: 50px;
+    		}
+
+    		@media screen and (max-width: 1200px) {
+    			flex-basis: auto;
+    			margin-right: 0;
+    			margin-bottom: calc(40px + 10 * (100vw - 320px) / (1200 - 320));
+    			max-width: 370px;
+    		}
+    	}
+
+    	&:last-child {
+    		flex-grow: 1;
+
+    		@media screen and (max-width: 1200px) {
+    			width: 100%;
+    		}
+    	}
+    }
+}

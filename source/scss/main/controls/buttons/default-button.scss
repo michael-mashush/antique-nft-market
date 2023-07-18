@@ -1,0 +1,32 @@
+.default-button {
+    padding: 17px 45px;
+    width: 100%;
+    border: 1px solid rgba(var(--color-01));
+    background-color: rgba(var(--color-01));
+    transition: all 0.2s;
+
+    @media screen and (max-width: 1820px) {
+    	padding-top: calc(13px + 4 * (100vw - 320px) / (1820 - 320));
+    	padding-right: calc(30px + 15 * (100vw - 320px) / (1820 - 320));
+    	padding-bottom: calc(13px + 4 * (100vw - 320px) / (1820 - 320));
+    	padding-left: calc(30px + 15 * (100vw - 320px) / (1820 - 320));
+    }
+
+    &:focus-visible, &:hover {
+    	background-color: transparent;
+    }
+
+    &__text {
+    	text-transform: uppercase;
+    	letter-spacing: 0.1em;
+    	line-height: 1.5;
+    	font-weight: 400;
+    	font-size: 14px;
+    	color: rgba(var(--color-12));
+    	transition: all 0.2s;
+
+    	.default-button:focus-visible &, .default-button:hover & {
+    		color: rgba(var(--color-01));
+    	}
+    }
+}

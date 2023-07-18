@@ -1,0 +1,28 @@
+.latest-information-card {
+    position: relative;
+
+    &__image {
+    	padding-top: 55%;
+    }
+
+    &__inner {
+    	margin-top: 20px;
+    }
+
+    &__title {
+    	text-transform: uppercase;
+    	letter-spacing: 0.1em;
+    	line-height: 1.5;
+    	font-weight: 500;
+    	font-size: 18px;
+    	color: rgba(var(--color-01));
+
+    	@media screen and (max-width: 1440px) {
+    		font-size: calc(14px + 4 * (100vw - 320px) / (1440 - 320));
+    	}
+    }
+
+    &__descr {
+    	margin: 5px 0 15px 0;
+    }
+}

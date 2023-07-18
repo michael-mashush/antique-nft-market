@@ -1,0 +1,34 @@
+.heading {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 1.25;
+    font-family: 'Cormorant';
+    color: rgba(var(--color-01));
+
+    &--level-1 {
+    	font-weight: 400;
+    	font-size: 80px;
+
+    	@media screen and (max-width: 1820px) {
+    		font-size: calc(35px + 45 * (100vw - 320px) / (1820 - 320));
+    	}
+    }
+
+    &--level-2 {
+    	font-weight: 400;
+    	font-size: 52px;
+
+    	@media screen and (max-width: 1820px) {
+    		font-size: calc(28px + 24 * (100vw - 320px) / (1820 - 320));
+    	}
+    }
+
+    &--level-3 {
+    	font-weight: 500;
+    	font-size: 24px;
+
+    	@media screen and (max-width: 1820px) {
+    		font-size: calc(20px + 4 * (100vw - 320px) / (1820 - 320));
+    	}
+    }
+}

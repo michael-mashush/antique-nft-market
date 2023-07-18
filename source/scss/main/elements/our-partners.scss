@@ -1,0 +1,35 @@
+.our-partners {
+    display: grid;
+    gap: 20px;
+
+    &__list {
+    	display: grid;
+    	justify-content: center;
+    	justify-items: center;
+    	align-content: center;
+    	align-items: center;
+    	grid-template-columns: repeat(6, 1fr);
+    	gap: 60px 100px;
+
+    	@media screen and (max-width: 1820px) {
+    		column-gap: calc(50px + 50 * (100vw - 1200px) / (1820 - 1200));
+    		row-gap: calc(30px + 30 * (100vw - 1200px) / (1820 - 1200));
+    	}
+
+    	@media screen and (max-width: 1200px) {
+    		column-gap: calc(30px + 30 * (100vw - 768px) / (1200 - 768));
+    		row-gap: calc(30px + 30 * (100vw - 768px) / (1200 - 768));
+    		grid-template-columns: repeat(4, 1fr);
+    	}
+
+    	@media screen and (max-width: 768px) {
+    		column-gap: calc(40px + 20 * (100vw - 320px) / (768 - 320));
+    		row-gap: calc(40px + 20 * (100vw - 320px) / (768 - 320));
+    		grid-template-columns: repeat(2, 1fr);
+    	}
+
+    	@media screen and (max-width: 600px) {
+    		padding: 0 20px;
+    	}
+    }
+}

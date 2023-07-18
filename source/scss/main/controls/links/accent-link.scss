@@ -1,0 +1,9 @@
+.accent-link {
+    &__text {
+    	letter-spacing: 0.01em;
+    	line-height: 1.5;
+    	font-weight: 500;
+    	font-size: 16px;
+    	color: rgba(var(--color-02));
+    }
+}

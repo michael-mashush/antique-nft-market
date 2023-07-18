@@ -1,0 +1,26 @@
+.default-input {
+    padding: 17px 30px;
+    width: 100%;
+    background-color: transparent;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(var(--color-02));
+    transition: all 0.2s;
+
+    @media screen and (max-width: 1820px) {
+    	padding-top: calc(13px + 4 * (100vw - 320px) / (1820 - 320));
+    	padding-right: calc(20px + 10 * (100vw - 320px) / (1820 - 320));
+    	padding-bottom: calc(13px + 4 * (100vw - 320px) / (1820 - 320));
+    	padding-left: calc(20px + 10 * (100vw - 320px) / (1820 - 320));
+    }
+
+    &:focus-visible, &:hover {
+    	background-color: rgba(var(--color-10));
+    }
+
+    &::placeholder {
+    	font-style: italic;
+    }
+}

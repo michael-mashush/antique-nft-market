@@ -1,0 +1,7 @@
+.default-section {
+    margin-bottom: 160px;
+
+    @media screen and (max-width: 1820px) {
+    	margin-bottom: calc(100px + 60 * (100vw - 320px) / (1820 - 320));
+    }
+}

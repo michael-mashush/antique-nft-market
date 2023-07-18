@@ -1,0 +1,13 @@
+.recent-drops-slider {
+    position: relative;
+
+    &__slide {
+    	@media screen and (max-width: 1820px) {
+    		width: 410px;
+    	}
+
+    	@media screen and (max-width: 1440px) {
+    		width: calc(240px + 170 * (100vw - 320px) / (1440 - 320));
+    	}
+    }
+}

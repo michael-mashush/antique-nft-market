@@ -1,0 +1,38 @@
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1820px) {
+    	margin-bottom: calc(30px + 10 * (100vw - 320px) / (1820 - 320));
+    }
+
+    &__inner {
+    	display: flex;
+    	align-items: center;
+    	flex-direction: column;
+    }
+
+    &__block {
+    	&:not(:last-child) {
+    		margin-bottom: 15px;
+
+    		@media screen and (max-width: 1820px) {
+    			margin-bottom: calc(15px - 15 * (100vw - 320px) / (1820 - 320));
+    		}
+    	}
+
+    	&--large {
+    		max-width: 890px;
+    	}
+
+    	&--small {
+    		max-width: 680px;
+    	}
+    }
+
+    &__content {
+    	text-align: center;
+    }
+}

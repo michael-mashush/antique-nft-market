@@ -1,0 +1,44 @@
+.collection-card {
+    position: relative;
+    padding: 30px;
+    background-color: rgba(var(--color-11));
+
+    @media screen and (max-width: 1820px) {
+    	padding: calc(20px + 10 * (100vw - 1024px) / (1820 - 1024));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	padding: 10px;
+    }
+
+    &__image {
+    	padding-top: 100%;
+    }
+
+    &__inner {
+    	margin-top: 20px;
+    	text-align: center;
+
+    	@media screen and (max-width: 425px) {
+    		margin-top: 10px;
+    		padding: 10px;
+    	}
+    }
+
+    &__title {
+    	overflow: hidden;
+    	margin-bottom: 5px;
+    	text-transform: uppercase;
+    	text-overflow: ellipsis;
+    	white-space: nowrap;
+    	letter-spacing: 0.1em;
+    	line-height: 1.5;
+    	font-weight: 500;
+    	font-size: 18px;
+    	color: rgba(var(--color-01));
+
+    	@media screen and (max-width: 1440px) {
+    		font-size: calc(14px + 4 * (100vw - 320px) / (1440 - 320));
+    	}
+    }
+}

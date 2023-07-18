@@ -1,0 +1,16 @@
+.achievements {
+    display: flex;
+    justify-content: center;
+
+    &__list {
+    	display: grid;
+    	grid-template-columns: repeat(3, auto);
+    	gap: 100px;
+
+    	@media screen and (max-width: 768px) {
+    		justify-content: space-evenly;
+    		width: 100%;
+    		gap: 20px;
+    	}
+    }
+}

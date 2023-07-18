@@ -1,0 +1,36 @@
+.achievement {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__value {
+    	text-transform: uppercase;
+    	letter-spacing: 0.02em;
+    	line-height: 1.5;
+    	font-weight: 400;
+    	font-size: 52px;
+    	color: rgba(var(--color-01));
+
+    	@media screen and (max-width: 1820px) {
+    		font-size: calc(30px + 22 * (100vw - 320px) / (1820 - 320));
+    	}
+
+    	&::after {
+    		content: '+';
+    	}
+    }
+
+    &__title {
+    	text-transform: uppercase;
+    	letter-spacing: 0.1em;
+    	line-height: 1.5;
+    	font-weight: 400;
+    	font-size: 18px;
+    	color: rgba(var(--color-01));
+
+    	@media screen and (max-width: 1820px) {
+    		font-size: calc(12px + 6 * (100vw - 320px) / (1820 - 320));
+    	}
+    }
+}

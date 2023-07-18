@@ -1,0 +1,22 @@
+.logotype-link {
+    position: relative;
+    display: flex;
+
+    &__text {
+    	text-transform: uppercase;
+    	white-space: nowrap;
+    	letter-spacing: 0.1em;
+    	line-height: 1.5;
+    	font-weight: 400;
+    	font-size: 26px;
+    	color: rgba(var(--color-01));
+
+    	// @media screen and (max-width: 1440px) {
+    	// 	font-size: calc(20px + 6 * (100vw - 1024px) / (1440 - 1024));
+    	// }
+
+    	// @media screen and (max-width: 1024px) {
+    	// 	font-size: calc(25px + 5 * (100vw - 320px) / (1024 - 320));
+    	// }
+    }
+}

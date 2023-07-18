@@ -1,0 +1,55 @@
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    width: 46px;
+    border: 1px solid rgba(var(--color-11));
+    background-color: rgba(var(--color-11));
+    transition: all 0.2s;
+
+    @media screen and (max-width: 768px) {
+    	height: 40px;
+    	width: 40px;
+    }
+
+    &:focus-visible, &:hover {
+    	border-color: rgba(var(--color-06));
+    }
+
+    &__icon {
+    	&--facebook {
+    		height: 18px;
+    		width: 10px;
+    	}
+
+    	&--instagram {
+    		height: 16px;
+    		width: 15px;
+    	}
+
+    	&--twitter {
+    		height: 13px;
+    		width: 16px;
+    	}
+
+    	&--linkedin {
+    		height: 16px;
+    		width: 15px;
+    	}
+
+    	&--youtube {
+    		height: 13px;
+    		width: 19px;
+    	}
+
+    	& path {
+    		transition: all 0.2s;
+    		fill: rgba(var(--color-06));
+
+    		.social-link:focus-visible &, .social-link:hover & {
+    			fill: rgba(var(--color-04));
+    		}
+    	}
+    }
+}
