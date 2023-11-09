@@ -1,9 +1,19 @@
 # Simple Landing Page
 
-## About project
+AntiqNFT is a free NFT Marketplace Figma web design template by [TemplatesJungle](https://templatesjungle.com/). This template is designed for an NFT marketplace.
 
-One of the few projects where I learned how to interact with ``HTML``, ``CSS/SASS`` and ``JavaScript``. Finally it's time to post it so as not to store it on your PC. This is a simple page with minimal JavaScript code. I don't know if it's correct to use ``Webpack`` as a _dependency_ for ``Gulp``... 😳
+## Template Features
 
-## Addition
+- Clean design
+- Well organized layers
+- Auto-layout
+- Free Google fonts
+- Free stock images by Unsplash & Pexels
+- 100% free for both personal and commercial use
 
-This is quite old code, which means I'm a little ashamed of it (especially ``javascript``), but it works, so everything is ok 😎
+## Technologies
+
+1. ``HTML``
+2. ``CSS/SCSS``
+3. ``JavaScript``
+4. ``Gulp``
